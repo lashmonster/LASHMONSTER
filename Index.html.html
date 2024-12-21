@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lashmonster</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #000; /* Black theme */
+            color: #fff; /* White text */
+        }
+        header {
+            background-color: #ff007f; /* Pink color */
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        .services img {
+            width: 100%;
+            max-width: 300px;
+            margin: 10px auto;
+            border-radius: 10px;
+        }
+        .service-card {
+            display: inline-block;
+            margin: 20px;
+            padding: 10px;
+            border: 1px solid #ff007f;
+            border-radius: 10px;
+            width: 300px;
+        }
+        footer {
+            background-color: #222;
+            padding: 10px;
+            text-align: center;
+        }
+        .booking-form {
+            background-color: #111;
+            padding: 20px;
+            border-radius: 10px;
+            width: 80%;
+            margin: 20px auto;
+            color: #ff007f;
+        }
+        .booking-form label, .booking-form input, .booking-form select {
+            display: block;
+            margin: 10px auto;
+            width: 90%;
+        }
+        .contact {
+            padding: 20px;
+        }
+        .contact a {
+            color: #ff007f;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lashmonster</h1>
+    </header>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Welcome to Lashmonster, where we offer premium lash and brow services designed to enhance your beauty and confidence. Book with us for exceptional results.</p>
+    </section>
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-card">
+            <img src="volume.jpg" alt="Volume Lashes">
+            <h3>Volume Lashes</h3>
+            <p>₦20,000</p>
+        </div>
+        <div class="service-card">
+            <img src="microblading.jpg" alt="Microblading">
+            <h3>Microblading</h3>
+            <p>₦35,000</p>
+        </div>
+        <div class="service-card">
+            <img src="classic.jpg" alt="Classic Lashes">
+            <h3>Classic Lashes</h3>
+            <p>₦12,000</p>
+        </div>
+        <div class="service-card">
+            <img src="hybrid.jpg" alt="Hybrid Lashes">
+            <h3>Hybrid Lashes</h3>
+            <p>₦17,000</p>
+        </div>
+    </section>
+    <section id="booking" class="booking">
+        <h2>Book an Appointment</h2>
+        <div class="booking-form">
+            <form action="submit_booking.php" method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="service">Service</label>
+                <select id="service" name="service">
+                    <option value="classic">Classic Lashes (₦12k)</option>
+                    <option value="hybrid">Hybrid Lashes (₦17k)</option>
+                    <option value="volume">Volume Lashes (₦20k)</option>
+                    <option value="microblading">Microblading (₦35k)</option>
+                </select>
+
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Time</label>
+                <select id="time" name="time">
+                    <option value="9:30">9:30 AM</option>
+                    <option value="11:00">11:00 AM</option>
+                    <option value="1:30">1:30 PM</option>
+                    <option value="3:00">3:00 PM</option>
+                    <option value="4:30">4:30 PM</option>
+                </select>
+                
+                <button type="submit">Book Now</button>
+            </form>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>WhatsApp: <a href="https://wa.me/08119087828" target="_blank">08119087828</a></p>
+        <p>Email: <a href="mailto:osaprec@gmail.com">osaprec@gmail.com</a></p>
+        <p>Instagram: <a href="https://instagram.com/lashmonsterr" target="_blank">@lashmonsterr</a></p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Lashmonster. All rights reserved.</p>
+    </footer>
+</body>
+</html>
